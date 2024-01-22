@@ -1,0 +1,35 @@
+// Contextual backgrounds
+@mixin bg-variant($parent, $color) {
+    #{$parent} {
+        background-color: $color !important;
+    }
+    a#{$parent},
+    button#{$parent} {
+        @include hover-focus {
+            background-color: darken($color, 10%) !important;
+        }
+    }
+}
+
+@mixin bg-gradient-variant($parent, $color) {
+    #{$parent} {
+        background: linear-gradient(87deg, $color 0, saturate($color, 10%) 100%) !important;
+    }
+}
+
+@mixin background-image($background-repeat,$background-size) {
+    background-repeat: $background-repeat;
+    background-position: top center;
+    background-size: $background-size;
+}
+
+
+@mixin contact-card-style {
+    background-color: $gray-100;
+    border-color: $gray-200;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: $border-radius;
+    padding: calc($alert-padding-x / 2) calc($alert-padding-y / 2);
+}
+

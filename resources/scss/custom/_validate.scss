@@ -1,0 +1,7 @@
+input:invalid:required {
+  border-color: $gray-400;
+}
+
+input:valid {
+  border-color: $gray-300;
+}

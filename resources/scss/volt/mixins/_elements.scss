@@ -1,0 +1,15 @@
+@mixin contact-style {
+    span {
+        color: $gray-600;
+        font-weight: normal;
+        @include margin-bottom(.65rem);
+
+        strong {
+            color: $gray-400;
+            font-weight: bold;
+        }
+        &.property {
+            margin-bottom: 1rem;
+        }
+    }
+}

@@ -1,0 +1,242 @@
+// write your custom styles here!
+.fs-7 {
+    font-size: 0.95rem !important;
+}
+
+.fs-8 {
+    font-size: 0.85rem !important;
+}
+
+.text-primary {
+    color: $dark !important;
+}
+
+.text-white {
+    color: $white !important;
+}
+
+.text-secondary {
+    color: $yellow !important;
+}
+
+.radio_button {
+    @include display-flex;
+    @include flex-direction('row');
+    @include contact-card-style;
+    cursor: pointer;
+
+    .form-check-input-container {
+        width: 15%;
+        @include display-flex;
+        @include justify-content(center);
+        @include align-items(flex-start);
+        @include margin-top(25px);
+
+        .form-check-input {
+            @include margin(0)
+        }
+    }
+}
+
+.radio_button_label {
+    width: 100%;
+
+    .form-check-label {
+        @include display-flex;
+        @include flex-direction(column);
+        @include justify-content(flex-start);
+        @include contact-style();
+    }
+
+    .label {
+        .property {
+            @include margin-bottom(.85rem !important);
+        }
+    }
+}
+
+.site_tech_params {
+    @include display-flex;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    @include align-items(center);
+
+    .form-check > label {
+        color: $primary;
+    }
+}
+
+.dataTables_wrapper {
+    .dataTables_length {
+        text-align: left !important;
+        margin-bottom: .5rem;
+
+        label {
+            padding-left: 0;
+
+            select {
+                min-width: 80%;
+            }
+        }
+    }
+
+    .dtr-details {
+        li {
+            display: flex;
+            flex-direction: column;
+
+            .dtr-data {
+                word-wrap: break-word;
+                white-space: pre-wrap;
+            }
+        }
+    }
+
+    .dataTables_info {
+        padding-left: 0;
+    }
+}
+
+.clients_counter, .teams_counter, .sites_counter, .managers_counter {
+    @include align-items(flex-start);
+}
+
+.numberflip-digit-container-value span, .numberflip-digit-container-value-hidden {
+    @include font-size(2rem);
+    @include margin-left(0);
+    @include margin-bottom(0);
+}
+
+.ca-ua {
+    font-size: 8pt !important;
+}
+
+th.empty, td.empty {
+    @include margin(0 !important);
+    @include padding(0 !important);
+}
+
+.certificates {
+    .certificate {
+        .card-body {
+            padding: 0;
+            min-height: 159px !important;
+            max-height: 159px !important;
+            @include display-flex;
+            @include justify-content(center);
+
+            canvas {
+                width: 100%;
+            }
+        }
+
+        .card-header {
+            padding: .25rem;
+        }
+
+        .card-footer {
+            padding: .25rem;
+            @include display-flex;
+            @include flex-direction(row);
+            @include justify-content(space-between);
+            @include align-items(center);
+
+            .property {
+                strong {
+                    color: $gray-400 !important;
+                    @include font-size(0.85rem);
+                }
+            }
+
+            .delete_button {
+                width: 30px !important;
+                height: 30px !important;
+                @include display-flex;
+                @include flex-direction(row);
+                @include justify-content(center);
+                @include align-items(center);
+                @include padding(0);
+
+                i.bi {
+                    display: block;
+                    @include rotate(45);
+                }
+            }
+        }
+    }
+
+    &.show {
+        .certificate {
+            .card-footer {
+                .delete_button {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#certificate_window_enable {
+    cursor: pointer;
+    height: 100%;
+
+    .card-body {
+        @include display-flex;
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+
+        .circle-icon {
+            width: 56px;
+            height: 56px;
+            background-color: $gray-300;
+            font-weight: 600;
+            @include font-size(2rem);
+            @include padding(1rem);
+            @include border-radius(50rem);
+            @include display-flex;
+            @include align-items(center);
+            @include justify-content(center);
+            @include margin-top(3rem);
+            @include margin-bottom(3rem);
+        }
+
+        .title {
+            color: $gray-400 !important;
+        }
+    }
+
+    &:hover {
+        .card-body {
+            background-color: $yellow-100;
+        }
+
+        .title {
+            color: $gray-800 !important;
+        }
+    }
+}
+
+#additional_price_container {
+    .alert {
+        padding: .25rem;
+    }
+}
+
+.delete_button {
+    width: 30px !important;
+    height: 30px !important;
+    @include display-flex;
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+    @include padding(0);
+
+    i.bi {
+        display: block;
+        @include rotate(45);
+    }
+}
+
+
+

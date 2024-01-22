@@ -1,0 +1,14 @@
+## Project install
+- create .env file from .env.example and provide proper credentials to your database
+- in project root folder run command `composer install` to install vendor libraries
+- in project root folder run command `php artisan key:generate` to generate app key
+- in `storage` folder create new folder `framework`
+- in `storage/framework` folder create 3 new folders
+  - `cache`
+  - `sessions`
+  - `views`
+- in project root folder run command `npm insatll` to install all required node modules
+- in project root folder run command `npm run dev` to compile CSS and JS resources
+- in project root folder run command `php artisan migrate:fresh` to apply DB migrations
+- in project root folder run command `php artisan db:seed` to seed the DB
+- use user with email: `admin@test.com` and password `password` 
